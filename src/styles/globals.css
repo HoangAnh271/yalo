@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.active svg {
+  fill: #fff;
+}
+
+.active circle {
+  stroke: #0091ff;
+}
+
+.active path {
+  stroke: #0091ff;
+}
+
+.contact-grid {
+  display: grid;
+  grid:
+    [item1-start] "item1 item2 item3 item4" 37px
+    [item1-start] "item1 item5 item5 item5" 37px
+    / [item1] 60px [item2] 217px [item3] 20px [item4] 21px;
+}
+
+.contact-item1 {
+  grid-area: item1;
+}
+
+.contact-item2 {
+  grid-area: item2;
+}
+
+.contact-item3 {
+  grid-area: item3;
+}
+
+.contact-item4 {
+  grid-area: item4;
+}
+
+.contact-item5 {
+  grid-area: item5;
+}
